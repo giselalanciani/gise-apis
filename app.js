@@ -7,6 +7,8 @@ const profileRoutes = require("./routes/profile");
 
 const dogsRoutes = require("./routes/dogs");
 
+const moviesRoutes = require("./routes/movies");
+
 const app = express();
 
 app.use((req, res, next) => {
@@ -26,6 +28,7 @@ app.use(usersRoutes);
 app.use(profileRoutes);
 
 app.use(dogsRoutes);
+app.use(moviesRoutes);
 
 // app.use((req, res, next) => {
 //   res.setHeader('Content-Type', 'text/html');
